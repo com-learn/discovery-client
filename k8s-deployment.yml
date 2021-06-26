@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: discovery-client
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: discovery-client
+  template:
+    metadata:
+      labels:
+        app: discovery-client
+    spec:
+      imagePullSecrets:
+        - name: regcred
+      containers:
+        - name: discovery-client
+          image: dockr.jfrog.io/mido-docker/discovery-client:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8090
