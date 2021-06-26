@@ -68,17 +68,11 @@
 				<configuration>
 					<from>
 						<image>dockr.jfrog.io/mido-docker/arm64v8/openjdk:11-jre-slim</image>
-						<auth>
-							<username>midoshkm@gmail.com</username>
-							<password>Jfrog@123</password>
-						</auth>
+						
 					</from>
 					<to>
 						<image>dockr.jfrog.io/mido-docker/discovery-client:latest</image>
-						<auth>
-							<username>midoshkm@gmail.com</username>
-							<password>Jfrog@123</password>
-						</auth>
+					
 					</to>
 				</configuration>
 			</plugin>
