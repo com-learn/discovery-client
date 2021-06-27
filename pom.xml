@@ -68,11 +68,9 @@
 				<configuration>
 					<from>
 						<image>dockr.jfrog.io/mido-docker/arm64v8/openjdk:11-jre-slim</image>
-						
 					</from>
 					<to>
 						<image>dockr.jfrog.io/mido-docker/discovery-client:latest</image>
-					
 					</to>
 				</configuration>
 			</plugin>

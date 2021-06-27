@@ -29,7 +29,7 @@ public class DiscoveryClientApplication {
 }
 
 @RestController
-@RequestMapping("/discovery")
+@RequestMapping("/api/discovery")
 class DiscoveryController {
 
     @Autowired 
@@ -42,7 +42,7 @@ class DiscoveryController {
     @GetMapping("/callboot")
 	public String callHello() {
 
-        String url = "http://bootdemo:8080/hello";
+        String url = "http://bootdemo:8080/api/bootdemo/hello";
         ResponseEntity<String> entity=
          restTemplate.getForEntity(url, String.class);
 
