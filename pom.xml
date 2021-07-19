@@ -18,7 +18,14 @@
 		<spring-cloud.version>2020.0.3</spring-cloud.version>
 	</properties>
 	<dependencies>
-
+<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-openfeign</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-loadbalancer</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
@@ -34,14 +41,16 @@
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-kubernetes</artifactId>
-			<version>1.1.0.RELEASE</version>
+			<version>1.1.2.RELEASE</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-kubernetes-config</artifactId>
-			<version>1.1.0.RELEASE</version>
+			<version>1.1.2.RELEASE</version>
 		</dependency>
+
+		
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>
@@ -49,6 +58,14 @@
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-dependencies</artifactId>
 				<version>${spring-cloud.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>2020.0.3</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
@@ -68,9 +85,17 @@
 				<configuration>
 					<from>
 						<image>dockr.jfrog.io/mido-docker/arm64v8/openjdk:11-jre-slim</image>
+						<auth>
+							<username>midoshkm@gmail.com</username>
+							<password>Jfrog@123</password>
+						</auth>
 					</from>
 					<to>
 						<image>dockr.jfrog.io/mido-docker/discovery-client:latest</image>
+						<auth>
+							<username>midoshkm@gmail.com</username>
+							<password>Jfrog@123</password>
+						</auth>
 					</to>
 				</configuration>
 			</plugin>
