@@ -82,17 +82,15 @@
 				<version>3.1.2</version>
 				<configuration>
 					<from>
-						<image>dockr.jfrog.io/mido-docker/arm64v8/openjdk:11-jre-slim</image>
+						<image>arm64v8/openjdk:11-jre-slim</image>
 						<auth>
-							<username>midoshkm@gmail.com</username>
-							<password>Jfrog@123</password>
+							<username>midoshkm</username>
 						</auth>
 					</from>
 					<to>
-						<image>dockr.jfrog.io/mido-docker/${project.artifactId}:latest</image>
+						<image>midoshkm/${project.artifactId}:latest</image>
 						<auth>
-							<username>midoshkm@gmail.com</username>
-							<password>Jfrog@123</password>
+							<username>midoshkm</username>
 						</auth>
 					</to>
 				</configuration>

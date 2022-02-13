@@ -16,7 +16,7 @@ spec:
         - name: regcred
       containers:
         - name: discovery-client
-          image: dockr.jfrog.io/mido-docker/discovery-client:latest
+          image: midoshkm/discovery-client:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 8090
